@@ -1,0 +1,21 @@
+{
+  "name": "hollowknightpg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "proxy": "http://localhost:8081",
+  "scripts": {
+    "start": "cd src && nodemon app.js",
+    "dev": "cd src && nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "make-runnable": "^1.4.1",
+    "pg": "^8.9.0",
+    "pg-promise": "^11.3.0"
+  }
+}

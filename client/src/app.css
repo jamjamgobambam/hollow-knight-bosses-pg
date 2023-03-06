@@ -1,0 +1,517 @@
+@import url("https://unpkg.com/@picocss/pico@1.*/css/pico.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --font-family: Lato, Verdana, sans-serif;
+    background-color: rgb(1, 17, 38);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button, [role=button] {
+    width: max-content;
+    background-color: rgb(173, 197, 217);
+    border: 2px solid transparent;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: black;
+    transition: 0.3s;
+}
+
+[role=button] {
+    height: max-content;
+    font-size: 16px;
+}
+
+button:hover, [role=button]:hover {
+    background-color: rgb(2, 40, 89);
+    border: 2px solid black;
+    color: white;
+}
+
+/* banner and header */
+
+header {
+  background-image: url("/assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.heading-container {
+    background-color: rgba(1, 17, 38, 0.5);
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2 {
+    color: white;
+}
+
+header p {
+    font-style: italic;
+    color: white;
+}
+
+@import url("https://unpkg.com/@picocss/pico@1.*/css/pico.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --font-family: Lato, Verdana, sans-serif;
+    background-color: rgb(1, 17, 38);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button, [role=button] {
+    width: max-content;
+    background-color: rgb(173, 197, 217);
+    border: 2px solid transparent;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: black;
+    transition: 0.3s;
+}
+
+[role=button] {
+    height: max-content;
+    font-size: 16px;
+}
+
+button:hover, [role=button]:hover {
+    background-color: rgb(2, 40, 89);
+    border: 2px solid black;
+    color: white;
+}
+
+/* banner and header */
+
+header {
+  background-image: url("/public/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.heading-container {
+    background-color: rgba(1, 17, 38, 0.5);
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2 {
+    color: white;
+}
+
+header p {
+    font-style: italic;
+    color: white;
+}
+
+.page-not-found {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    width: 70%;
+    justify-items: center;
+    align-items: center;
+}
+
+.page-not-found img {
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 400px;
+    height: auto;
+}
+
+.page-not-found p {
+    color: white;
+}
+
+/* card content */
+
+article {
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+.boss-card-overlay {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.boss-brief {
+    padding-top: 50px;
+    padding-left: 20px;
+    letter-spacing: 3px;
+}
+
+.boss-card-name {
+    font-size: 30px;
+    line-height: 40px;
+    transform: translateY(40px);
+    transition: all 0.7s;
+}
+
+hr {
+    display: block;
+    width: 0px;
+    border: none;
+    border-bottom: solid 2px white;
+    position: absolute;
+    left: 30px;
+    padding-top: 10px;
+    transition: all .5s;
+}
+
+.boss-card-location {
+    padding-top: 50px;
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: bold;  
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s;
+}
+
+.boss-card-link {
+    padding-top: 0px;
+    padding-left: 25px;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: all 0.7s;
+}
+
+article:hover .boss-card-overlay {
+    opacity: 1;
+}
+
+article:hover .boss-card-name {
+    transform: translateY(0px);
+}
+
+article:hover hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+
+article:hover .boss-card-location {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+
+article:hover .boss-card-link {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+}
+
+article h3 {
+    color: rgb(86, 81, 115);
+    margin-bottom: 0px;
+    padding-left: 10px;
+    font-size: 0.8em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+article p {
+    font-size: 0.7em;
+    font-style: italic;
+    padding-left: 10px;
+    color: white;
+}
+
+/* single boss content */
+
+.boss-info {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    background-color:rgb(173, 197, 217);
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 50px;
+    width: 60%;
+    display: flex;
+}
+
+.boss-info img {
+    width: 90%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center center;
+    border: 3px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.boss-health-location {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+
+span {
+    padding-right: 8px;
+}
+
+.info-icon {
+    color: rgb(2, 72, 85);
+}
+
+.boss-info h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+    margin-bottom: 20px;
+}
+
+.boss-info p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.boss-info-description {
+    font-style: italic;
+}
+
+/* card content */
+
+article {
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+.boss-card-overlay {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.boss-brief {
+    padding-top: 50px;
+    padding-left: 20px;
+    letter-spacing: 3px;
+}
+
+.boss-card-name {
+    font-size: 30px;
+    line-height: 40px;
+    transform: translateY(40px);
+    transition: all 0.7s;
+}
+
+hr {
+    display: block;
+    width: 0px;
+    border: none;
+    border-bottom: solid 2px white;
+    position: absolute;
+    left: 30px;
+    padding-top: 10px;
+    transition: all .5s;
+}
+
+.boss-card-location {
+    padding-top: 50px;
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: bold;  
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s;
+}
+
+.boss-card-link {
+    padding-top: 0px;
+    padding-left: 25px;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: all 0.7s;
+}
+
+article:hover .boss-card-overlay {
+    opacity: 1;
+}
+
+article:hover .boss-card-name {
+    transform: translateY(0px);
+}
+
+article:hover hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+
+article:hover .boss-card-location {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+
+article:hover .boss-card-link {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+}
+
+article h3 {
+    color: rgb(86, 81, 115);
+    margin-bottom: 0px;
+    padding-left: 10px;
+    font-size: 0.8em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+article p {
+    font-size: 0.7em;
+    font-style: italic;
+    padding-left: 10px;
+    color: white;
+}
+
+/* single boss content */
+
+.boss-info {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    background-color:rgb(173, 197, 217);
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 50px;
+    width: 60%;
+    display: flex;
+}
+
+.boss-info img {
+    width: 90%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center center;
+    border: 3px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.boss-health-location {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+
+span {
+    padding-right: 8px;
+}
+
+.info-icon {
+    color: rgb(2, 72, 85);
+}
+
+.boss-info h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+    margin-bottom: 20px;
+}
+
+.boss-info p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.boss-info-description {
+    font-style: italic;
+}
