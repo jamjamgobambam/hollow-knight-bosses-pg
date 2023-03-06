@@ -5,7 +5,7 @@ console.log(currentBossId)
 //     .then(res => res.json())
 //     .then((data) => populateBoss(data))
 
-fetch(`https://hollow-knight-bosses-pg-production.up.railway.app/bosses/${currentBossId}`)
+fetch(`https://bossesapi.up.railway.app/bosses/${currentBossId}`)
     .then(res => res.json())
     .then((data) => populateBoss(data))
 

@@ -1,4 +1,4 @@
-fetch('https://hollow-knight-bosses-pg-production.up.railway.app/bosses')
+fetch('https://bossesapi.up.railway.app/bosses')
     .then(res => res.json())
     .then((data) => populateBosses(data))
 
