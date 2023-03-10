@@ -1,11 +1,7 @@
 const currentBossId = window.location.pathname.substring(8,9)
 console.log(currentBossId)
 
-// fetch(`http://localhost:8081/bosses/${currentBossId}`)
-//     .then(res => res.json())
-//     .then((data) => populateBoss(data))
-
-fetch(`https://bossesapi.up.railway.app/bosses/${currentBossId}`)
+fetch(`http://localhost:8081/bosses/${currentBossId}`)
     .then(res => res.json())
     .then((data) => populateBoss(data))
 

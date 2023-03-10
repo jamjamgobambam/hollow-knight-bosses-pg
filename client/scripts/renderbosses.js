@@ -1,4 +1,4 @@
-fetch('https://bossesapi.up.railway.app/bosses')
+fetch('http://localhost:8081/bosses')
     .then(res => res.json())
     .then((data) => populateBosses(data))
 

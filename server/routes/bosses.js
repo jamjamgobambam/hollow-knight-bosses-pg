@@ -1,5 +1,6 @@
 const express = require('express')
 const bossesRouter = express.Router()
+const path = require('path')
 
 const { getBosses, getBossById } = require('../controllers/bosses')
 
