@@ -1,4 +1,4 @@
-fetch('/bosses')
+fetch('http://localhost:8081/bosses')
     .then(res => res.json())
     .then((data) => populateBosses(data))
 
