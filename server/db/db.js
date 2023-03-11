@@ -2,11 +2,11 @@ const pg = require('pg')
 const data = require('./data.json')
 
 const config = {
-    user: 'cpweb103',
-    password: 'cpweb103',
-    host: 'localhost',
-    port: 5432,
-    database: 'hollowknight'
+    user: process.env.PGUSER,
+    password: process.env.PGPASSWORD,
+    host: process.env.PGHOST,
+    port: process.env.PGPORT,
+    database: process.env.PGDATABASE
 }
 
 const pool = new pg.Pool(config)
